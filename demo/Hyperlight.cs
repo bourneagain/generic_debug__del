@@ -26,7 +26,12 @@ namespace Hyperlight
             this._a = a;
         }
 
-        public Sandbox(Action<T>? func, int a, string s) => _action = func;
+        public Sandbox(Action<T>? func, int a, string s)
+        {
+            // How to invoke func?
+            // func?.Invoke(<HyperlightWasmSandbox obj)
+            Console.WriteLine("Need to find how to call the func Action here with instance of the HyperlightWasmSandbox");
+        }
 
         public void Name()
         {
